@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Торт и выпечка от Safia в Ташкенте | Safia Cafe & Bakery</title>
+    <link rel="icon" href="./img/girl.png" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- navbar start -->
+      <div class="navbar">
+        <div class="navbar-items">
+          <div class="navbar-item navbar-item1">
+            <a href="#" class="navbar-brend">
+              <img src="./img/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="navbar-item navbar-item2">
+            <ul>
+              <li><a href="#">Ташкент</a></li>
+              <li><a href="#" style="vertical-align: middle">О нас</a></li>
+              <li><a href="../menu/index.html">Меню</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Рестораны</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li>
+                <a href="#">
+                  <span
+                    style="display: block; font-size: 20px; line-height: 21px"
+                    >+998 78 113 40 40</span
+                  >
+                  <span
+                    style="
+                      display: block;
+                      font-size: 14px;
+                      text-transform: none;
+                      text-align: center;
+                    "
+                    >Ежедневно с 8:00 до 23:00</span
+                  >
+                </a>
+              </li>
+            </ul>
+            <div class="navbar-item2_menu">
+              <div class="navbar-item2_menuLogo">
+                <img
+                  onclick="menu()"
+                  src="./img/menu.svg"
+                  style="cursor: pointer"
+                  alt=""
+                />
+                <a href="#" class="navbar-brend">
+                  <img style="height: 60px" src="./img/logo.svg" alt="" />
+                </a>
+              </div>
+              <ul id="ul-menu">
+                <li><a href="#">Ташкент</a></li>
+                <li><a href="#" style="vertical-align: middle">О нас</a></li>
+                <li><a href="#">Меню</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Рестораны</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li>
+                  <a
+                    class="after"
+                    style="
+                      color: rgba(0, 0, 0, 0.9);
+                      font-weight: 500;
+                      font-size: 17px;
+                      font-family: sans-serif;
+                    "
+                    href="#"
+                    class="after"
+                    id="after"
+                    onclick="dropdownStart()"
+                  >
+                    РУС
+                  </a>
+                  <div class="dropdown-menu1" id="dropdown-menu">
+                    <a class="dropdown-item1" href="#">O'zbekcha</a>
+                    <a class="dropdown-item1 active" href="#">Русский</a>
+                    <a class="dropdown-item1" href="#">English</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-item navbar-item3">
+            <ul>
+              <li style="padding-top: 7px">
+                <a href="#" class="after" id="after" onclick="dropdownStart1()">
+                  РУС
+                </a>
+                <div class="dropdown-menu1" id="dropdown-menu1">
+                  <a class="dropdown-item" href="#">O'zbekcha</a>
+                  <a class="dropdown-item active" href="#">Русский</a>
+                  <a class="dropdown-item" href="#">English</a>
+                </div>
+              </li>
+              <li class="li li1">
+                <a href="#">
+                  <img src="./img/ic_search.svg" alt="" />
+                </a>
+              </li>
+              <li class="li">
+                <a href="#">
+                  <img src="./img/ic_profile.png" alt="" />
+                </a>
+              </li>
+              <li class="li">
+                <a href="#">
+                  <img src="./img/ic_cart.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+
+      <!-- main section start -->
+      <div class="clear"></div>
+
+      <div class="main-section">
+        <div class="main-section_items">
+          <div class="main-section_navbar">
+            <h1 class="h1">Меню</h1>
+            <div class="main-section_nav">
+              <ul>
+                <li><a href="#">За вкусненьким сюда</a></li>
+                <li style="background-color: #d4d4d4"><a href="#">Торты</a></li>
+                <li><a href="#">Большие торты</a></li>
+                <li><a href="#">Пироги</a></li>
+                <li><a href="#">Слоеная выпечка</a></li>
+                <li><a href="#">Сдобная выпечка</a></li>
+                <li><a href="#">Кексы</a></li>
+                <li><a href="#">Эклеры</a></li>
+                <li><a href="#">Чак-чак</a></li>
+                <li><a href="#">Тарталетки</a></li>
+                <li><a href="#">Пирожное</a></li>
+                <li><a href="#">Печенье</a></li>
+                <li><a href="#">Макаронсы</a></li>
+                <li><a href="#">Мясная и несладкая выпечка</a></li>
+                <li><a href="#">Декор для дня рождения</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-section_product">
+            <div class="main-section_title">
+              <h1 class="h1">Торты</h1>
+              <div class="main-section_productSearch">
+                <input
+                  name="search"
+                  type="search"
+                  class="searchInput"
+                  placeholder="Что вы ищите"
+                />
+                <button name="search" type="button" class="btnSearch">
+                  Поиск
+                </button>
+              </div>
+            </div>
+            <hr class="hr" />
+            <div class="main-section_productItems">
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Прага new</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Добавить
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Ириска торт</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Медовый торт (Круглый)</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Прага new</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Добавить
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Ириска торт</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Медовый торт (Круглый)</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Прага new</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Добавить
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Ириска торт</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Медовый торт (Круглый)</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Прага new</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Добавить
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Ириска торт</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Медовый торт (Круглый)</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Прага new</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Добавить
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Ириска торт</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Медовый торт (Круглый)</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Прага new</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Добавить
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Ириска торт</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Медовый торт (Круглый)</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Прага new</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Добавить
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Ириска торт</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Медовый торт (Круглый)</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Прага new</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Добавить
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Ириска торт</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Медовый торт (Круглый)</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Прага new</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Добавить
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Ириска торт</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Медовый торт (Круглый)</a
+                    >
+                  </h4>
+                  <p>
+                    Тонкие шоколадные песочные коржи, прослоенные тонким слоем
+                    шоколадного сливочного крема. Украшен шоколадным ганашом и
+                    имбирным печеньем. Торт рассчитан на 10 - 12 персон.
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- main section end -->
+
+      <!-- footer start -->
+      <div class="footer">
+        <div class="footer-icon">
+          <img src="../images/girl.png" alt="" />
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="./index.html">Меню</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Рестораны</a></li>
+            <li><a href="#">Публичная оферта</a></li>
+            <li><a href="#">Карьера</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-tginsfac">
+          <div class="fac">
+            <img src="../images/ic_facebook.png" alt="" />
+          </div>
+          <div class="ins">
+            <img src="../images/ic_instagram.png" alt="" />
+          </div>
+          <div class="tg">
+            <img src="../images/ic_telegram.png" alt="" />
+          </div>
+        </div>
+        <p>2021 Safia Cafe & Bakery. Все права защищены.</p>
+      </div>
+      <!-- footer end -->
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
