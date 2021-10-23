@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .container {
-  max-width:1400px;
+  max-width: 1400px;
   background-color: #f7f7f7;
   margin: 0 auto;
 }
@@ -104,6 +104,7 @@ li {
   font-family: sans-serif;
   text-transform: uppercase;
   color: #5d5d5d;
+  transition: 1s;
 }
 
 .navbar-item2 > ul > li > a:hover {
@@ -684,7 +685,8 @@ p {
 
   .navbar-item2_menu > .navbar-item2_menuLogo {
     display: flex;
-    padding: 10px 22px;
+    margin-top: 31px;
+    padding: 12px 22px;
     flex-direction: row;
     justify-content: space-between;
   }
