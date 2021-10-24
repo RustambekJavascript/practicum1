@@ -9,7 +9,23 @@
     <link rel="icon" href="../menu/img/girl.png" />
   </head>
   <body>
-    <div class="container">
+    <div class="modal">
+      <div class="modal-close">
+        <span>Выберите город</span>
+        <img
+          src="./img/icons8-закрыть-окно-48.png"
+          alt=""
+          style="width: 24px; height: 24px"
+        />
+        <hr />
+      </div>
+
+      <div class="modal-title">
+        <a href="#"> Tashkent</a> <br />
+        <a href="#">Andijan</a>
+      </div>
+    </div>
+    <div class="container" id="container">
       <!-- navbar start -->
       <div class="navbar">
         <div class="navbar-items">
@@ -20,7 +36,7 @@
           </div>
           <div class="navbar-item navbar-item2">
             <ul>
-              <li><a href="#">Ташкент</a></li>
+              <li><a onclick="chiq()" href="#">Ташкент</a></li>
               <li>
                 <a href="../about/about.html" style="vertical-align: middle"
                   >О нас</a
@@ -202,6 +218,7 @@
       </div>
       <!-- footer end -->
     </div>
+
     <script src="./karera.js"></script>
   </body>
 </html>

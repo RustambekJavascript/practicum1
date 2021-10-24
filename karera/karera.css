@@ -3,7 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+.modal {
+  position: relative;
+  display: flex;
+  width: 200px;
+  left: 40%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+}
 .container {
+  margin-top: -80px;
   max-width: 1400px;
   background-color: #f7f7f7;
   margin: 0 auto;
