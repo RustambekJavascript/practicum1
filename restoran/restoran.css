@@ -7,7 +7,7 @@
   max-width: 1400px;
   background-color: #f7f7f7;
   margin: 0 auto;
-  height: 100vh;
+  height: auto;
 }
 a {
   text-decoration: none;
@@ -240,6 +240,12 @@ li {
   opacity: 1;
 }
 /* footer end */
+.karta {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
 
 @media screen and (min-width: 1180px) {
   .navbar-item2 > .navbar-item2_menu {
