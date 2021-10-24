@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Поиск | Safia Cafe & Bakery</title>
+    <title>Контакты | Safia Cafe & Bakery</title>
+    <link rel="stylesheet" href="./style/contact.css" />
     <link rel="icon" href="../menu/img/girl.png" />
-    <link rel="stylesheet" href="./search.css" />
   </head>
   <body>
     <div class="container">
@@ -21,7 +21,11 @@
           <div class="navbar-item navbar-item2">
             <ul>
               <li><a href="#">Ташкент</a></li>
-              <li><a href="../about/about.html" style="vertical-align: middle">О нас</a></li>
+              <li>
+                <a href="../about/about.html" style="vertical-align: middle"
+                  >О нас</a
+                >
+              </li>
               <li><a href="../menu/index.html">Меню</a></li>
               <li><a href="../Новости/Hoвости.html">Новости</a></li>
               <li><a href="../restoran/restoran.html">Рестораны</a></li>
@@ -58,11 +62,11 @@
               </div>
               <ul id="ul-menu">
                 <li><a href="#">Ташкент</a></li>
-                <li><a href="../about/about.html" style="vertical-align: middle">О нас</a></li>
+                <li><a href="#" style="vertical-align: middle">О нас</a></li>
                 <li><a href="../menu/index.html">Меню</a></li>
                 <li><a href="../Новости/Hoвости.html">Новости</a></li>
-                <li><a href="../restoran/restoran.html">Рестораны</a></li>
-                <li><a href="../contact/contact.html">Контакты</a></li>
+                <li><a href="#">Рестораны</a></li>
+                <li><a href="#">Контакты</a></li>
                 <li>
                   <a
                     class="after"
@@ -125,30 +129,36 @@
       </div>
       <!-- navbar end -->
       <div class="clear"></div>
-      <!-- searching start -->
-      <div class="search">
-        <div class="search-items">
-          <div class="search-title">
-            <h1>Поиск</h1>
+      <!-- contact title start -->
+      <div class="contact">
+        <div class="contact-items">
+          <div class="contact-title">
+            <h1>Контакты</h1>
           </div>
-          <div class="search-form">
-            <form>
-              <input
-                type="search"
-                id="input"
-                class="input"
-                placeholder="Что вы ищите?"
-              />
-              <button title="Searching" class="btn">Поиск</button>
-            </form>
-          </div>
-          <div class="search-p">
-            <p>Ничего не найдено.</p>
+          <div class="contact-parag">
+            <div class="contact-parag_p">
+              <p>У вас возникли вопросы?!</p>
+              <p>
+                У моих друзей—операторов всегда есть ответы! Звоните нам каждый
+                день с 08:00 до 23:00 По номеру: 78 113 4040.
+              </p>
+              <p>
+                Мы с радостью поможем оформить вам заказ на вынос или доставку.
+              </p>
+              <p>
+                Доставка осуществляется по всему городу Ташкент. Стоимость
+                зависит от расстояния. Первые 3 километра – 9 000сум, после,
+                каждый последующий по 1 300сум. Режим работы доставки: 09:00 –
+                22:00.
+              </p>
+            </div>
+            <div class="contact-parag_img">
+              <img src="../images/contacts.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
-      <!-- searching end -->
-
+      <!-- contact title end -->
       <!-- footer start -->
       <div class="footer">
         <div class="footer-icon">
@@ -162,7 +172,7 @@
             <li><a href="../restoran/restoran.html">Рестораны</a></li>
             <li><a href="#">Публичная оферта</a></li>
             <li><a href="#">Карьера</a></li>
-            <li><a href="../contact/contact.html">Контакты</a></li>
+            <li><a href="contact.html">Контакты</a></li>
           </ul>
         </div>
         <div class="footer-tginsfac">
@@ -180,6 +190,6 @@
       </div>
       <!-- footer end -->
     </div>
-    <script src="./search.js"></script>
+    <script src="./js/contactn.js"></script>
   </body>
 </html>

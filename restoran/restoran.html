@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Поиск | Safia Cafe & Bakery</title>
-    <link rel="icon" href="../menu/img/girl.png" />
-    <link rel="stylesheet" href="./search.css" />
+    <title>Рестораны | Safia Cafe & Bakery</title>
+    <link rel="icon" href="../images/girl.png" />
+    <link rel="stylesheet" href="./restoran.css" />
   </head>
   <body>
     <div class="container">
@@ -21,10 +21,14 @@
           <div class="navbar-item navbar-item2">
             <ul>
               <li><a href="#">Ташкент</a></li>
-              <li><a href="../about/about.html" style="vertical-align: middle">О нас</a></li>
+              <li>
+                <a href="../about/about.html" style="vertical-align: middle"
+                  >О нас</a
+                >
+              </li>
               <li><a href="../menu/index.html">Меню</a></li>
               <li><a href="../Новости/Hoвости.html">Новости</a></li>
-              <li><a href="../restoran/restoran.html">Рестораны</a></li>
+              <li><a href="./restoran.html">Рестораны</a></li>
               <li><a href="../contact/contact.html">Контакты</a></li>
               <li>
                 <a href="#">
@@ -58,10 +62,14 @@
               </div>
               <ul id="ul-menu">
                 <li><a href="#">Ташкент</a></li>
-                <li><a href="../about/about.html" style="vertical-align: middle">О нас</a></li>
+                <li>
+                  <a href="../about/about.html" style="vertical-align: middle"
+                    >О нас</a
+                  >
+                </li>
                 <li><a href="../menu/index.html">Меню</a></li>
                 <li><a href="../Новости/Hoвости.html">Новости</a></li>
-                <li><a href="../restoran/restoran.html">Рестораны</a></li>
+                <li><a href="./restoran.html">Рестораны</a></li>
                 <li><a href="../contact/contact.html">Контакты</a></li>
                 <li>
                   <a
@@ -124,31 +132,15 @@
         </div>
       </div>
       <!-- navbar end -->
-      <div class="clear"></div>
-      <!-- searching start -->
-      <div class="search">
-        <div class="search-items">
-          <div class="search-title">
-            <h1>Поиск</h1>
-          </div>
-          <div class="search-form">
-            <form>
-              <input
-                type="search"
-                id="input"
-                class="input"
-                placeholder="Что вы ищите?"
-              />
-              <button title="Searching" class="btn">Поиск</button>
-            </form>
-          </div>
-          <div class="search-p">
-            <p>Ничего не найдено.</p>
-          </div>
-        </div>
-      </div>
-      <!-- searching end -->
+      <!-- iframe start -->
+      <iframe
+        src="https://www.google.com/search?rlz=1C1IXYC_ruUZ974UZ974&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=AOaemvJx5BQVhs0cpSRc9nV49jPIiFxOHQ:1635011083372&q=safia+bakery+kart&rflfq=1&num=10&ved=2ahUKEwiBo8_2iuHzAhXok4sKHZurDRcQtgN6BAgPEAQ#rlfi=hd:;si:16806263657362438236;mv:[[41.38932174046439,69.46627413908057],[41.22788375578033,69.04674018787259]]"
+        frameborder="0"
+        style="width: 500px; height: 500px"
+      ></iframe>
 
+      <!-- iframe end -->
+      <div class="clear"></div>
       <!-- footer start -->
       <div class="footer">
         <div class="footer-icon">
@@ -157,7 +149,7 @@
         <div class="footer-list">
           <ul>
             <li><a href="../about/about.html">О нас</a></li>
-            <li><a href="./menu/index.html">Меню</a></li>
+            <li><a href="../menu/index.html">Меню</a></li>
             <li><a href="../Новости/Hoвости.html">Новости</a></li>
             <li><a href="../restoran/restoran.html">Рестораны</a></li>
             <li><a href="#">Публичная оферта</a></li>
@@ -180,6 +172,6 @@
       </div>
       <!-- footer end -->
     </div>
-    <script src="./search.js"></script>
+    <script src="./restoran.js"></script>
   </body>
 </html>

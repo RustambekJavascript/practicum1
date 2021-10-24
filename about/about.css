@@ -15,14 +15,15 @@ a {
 li {
   list-style-type: none;
 }
+
+.clear {
+  height: 150px;
+  clear: both;
+}
+
 @font-face {
   font-family: font1;
   src: url("../fontss/Architects_Daughter/ArchitectsDaughter-Regular.ttf");
-}
-
-.clear {
-  height: 120px;
-  clear: both;
 }
 
 /* navbar start */
@@ -177,76 +178,64 @@ li {
 /* navbar item 3 end */
 
 /* navbar end */
-/* search start */
-.search {
-  width: 100%;
-  height: 400px;
-  background-color: #f7f7f7;
-}
-.search-items {
+
+/* about-title start*/
+
+.about-title {
   display: flex;
+  position: relative;
+  top: 160px;
+  width: 80%;
+  margin: 0 auto;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 80%;
-  justify-content: center;
-  margin: 10px 10%;
 }
-.search-title {
-  margin: 40px 0 60px 0;
-  color: #3f3f3f;
+.about-title > .title {
+  margin: 40px 0;
   font-size: 30px;
   font-family: font1;
 }
-.search-form {
-  width: 100%;
-}
-.search-form > form {
+.refrenc {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 70px;
+  justify-content: space-between;
 }
-.search-form > form > .input {
-  width: 90%;
-  background-color: #fff;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
-  padding: 9px 10px;
-  font-size: 18px;
-  margin-right: 10px;
-  outline: none;
-  transition: 0.3s;
+
+.refrenc-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
-.search-form > form > .input:focus {
-  color: #495057;
-  background-color: #fff;
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+
+.refrenc-img > .img {
+  width: 540px;
+  height: 417px;
 }
-.search-form > form > .btn {
-  padding: 10px 20px;
-  background-color: #d11919;
-  border: none;
-  cursor: pointer;
-  border-radius: 15px;
-  color: #fff;
-  transition: 0.5s linear;
-  box-shadow: 0px 0px 10px #d11919;
+
+.refrenc-img > .img > img {
+  width: 100%;
+  height: auto;
+}
+.refrenc-title > p {
+  font-family: sans-serif;
+  color: #424242;
+  line-height: 30px;
+}
+.refrenc-welcome {
+  text-align: right;
+  font-family: "Times New Roman", sans-serif;
+}
+.refrenc-welcome > h2 {
+  margin: 40px 0;
+}
+.name {
+  margin: 30px 0;
+}
+.name > span {
   font-family: cursive;
 }
-.search-form > form > .btn:hover {
-  background-color: rgb(38, 175, 38);
-  color: yellow;
-  box-shadow: 0px 0px 15px rgb(28, 238, 28);
-}
-.search-p > p {
-  font-family: sans-serif;
-  font-size: 16px;
-  color: #8494a4;
-}
-/* search end */
+
+/* about title end */
 
 /* footer start */
 .footer {
@@ -256,6 +245,7 @@ li {
   justify-content: center;
   align-items: center;
   padding: 40px;
+  margin-top: 200px;
 }
 
 .footer > p {
@@ -327,9 +317,6 @@ li {
   .navbar-item2 > .navbar-item2_menu {
     display: none;
   }
-  .search-form > form > .input {
-    margin-bottom: 10px;
-  }
 }
 @media screen and (max-width: 992px) {
   .navbar-items {
@@ -342,7 +329,8 @@ li {
 
   .navbar-item2_menu > .navbar-item2_menuLogo {
     display: flex;
-    padding: 10px 22px;
+    padding: 12px 22px;
+    margin-top: 31px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -357,21 +345,6 @@ li {
   .navbar-item2_menu {
     background-color: #ececec;
     width: 100%;
-  }
-
-  .navbar-item2_menu > .navbar-item2_menuLogo {
-    display: flex;
-    padding: 10px 22px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .navbar-item2_menu > ul {
-    /* display: flex; */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: none;
   }
 
   .navbar-item3 {
@@ -387,6 +360,7 @@ li {
     font-size: 22px;
     font-family: myfont1;
     font-weight: 600;
+    transition: 1s;
   }
 
   .navbar-item2_menu > ul > li > a:hover {
@@ -432,19 +406,18 @@ li {
   .navbar-item2 > ul {
     display: none;
   }
-  .search-form > form > .input {
-    margin-bottom: 10px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .search-elements {
+  .refrenc {
     flex-direction: column;
   }
-  .search-elements > input,
-  button {
-    margin-bottom: 10px;
+  .refrenc-img {
+    align-items: center;
+    margin: 0 auto;
   }
-  .search-form > form > .input {
-    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .refrenc-img > .img {
+    width: auto;
+    height: auto;
   }
 }

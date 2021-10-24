@@ -472,7 +472,8 @@ li {
 
   .navbar-item2_menu > .navbar-item2_menuLogo {
     display: flex;
-    padding: 10px 22px;
+    padding: 12px 22px;
+    margin-top: 31px;
     flex-direction: row;
     justify-content: space-between;
   }
