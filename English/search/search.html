@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search | Safia Cafe & Bakery</title>
+    <link rel="icon" href="../menu/img/girl.png" />
+    <link rel="stylesheet" href="./search.css" />
+  </head>
+  <body id="body1">
+    <div class="container">
+      <div class="container-modal" id="modal" style="display: none">
+        <div class="modal">
+          <div class="modal-exit">
+            <img
+              onclick="yop()"
+              style="cursor: pointer; width: 25px; height: 25px"
+              src="https://img.icons8.com/ios/50/000000/close-window.png"
+            />
+          </div>
+          <div class="modal-img-logo">
+            <img src="../menu/img/logo.svg" alt="" />
+          </div>
+          <div class="modal-input">
+            <input type="text" placeholder="Enter your phone number" />
+          </div>
+          <div class="modal-button">
+            <button type="submit">Continue</button>
+          </div>
+        </div>
+      </div>
+      <div class="backet" id="backet" style="display: none">
+        <div class="inside-backet">
+          <div class="backet-title">
+            <p>Cart</p>
+            <img
+              onclick="yop()"
+              style="cursor: pointer; width: 25px; height: 25px"
+              src="https://img.icons8.com/ios/50/000000/close-window.png"
+            />
+          </div>
+          <div class="product">
+            <p>Your basket is empty <br />Please add products</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- navbar start -->
+      <div class="navbar">
+        <div class="navbar-items">
+          <div class="navbar-item navbar-item1">
+            <a href="#" class="navbar-brend">
+              <img src="../menu/img/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="navbar-item navbar-item2">
+            <ul>
+              <li><a href="#">Таshkent</a></li>
+              <li>
+                <a href="../about/about.html" style="vertical-align: middle"
+                  >About</a
+                >
+              </li>
+              <li><a href="../menu/index.html">Меnu</a></li>
+              <li><a href="../Новости/Hoвости.html">News</a></li>
+              <li><a href="../restoran/restoran.html">Restaurants</a></li>
+              <li><a href="../contact/contact.html">Contacts</a></li>
+              <li>
+                <a href="#">
+                  <span
+                    style="display: block; font-size: 20px; line-height: 21px"
+                    >+998 78 113 40 40</span
+                  >
+                  <span
+                    style="
+                      display: block;
+                      font-size: 14px;
+                      text-transform: none;
+                      text-align: center;
+                    "
+                    >Daily from 8:00 до 23:00</span
+                  >
+                </a>
+              </li>
+            </ul>
+            <div class="navbar-item2_menu">
+              <div class="navbar-item2_menuLogo">
+                <img
+                  onclick="menu()"
+                  src="../menu/img/menu.svg"
+                  style="cursor: pointer"
+                  alt=""
+                />
+                <a href="#" class="navbar-brend">
+                  <img style="height: 60px" src="../menu/img/logo.svg" alt="" />
+                </a>
+              </div>
+              <ul id="ul-menu">
+                <li><a href="#">Тashkent</a></li>
+                <li>
+                  <a href="../about/about.html" style="vertical-align: middle"
+                    >About</a
+                  >
+                </li>
+                <li><a href="../menu/index.html">Мenu</a></li>
+                <li><a href="../Новости/Hoвости.html">News</a></li>
+                <li><a href="../restoran/restoran.html">Restaurants</a></li>
+                <li><a href="../contact/contact.html">Contacts</a></li>
+                <li>
+                  <a
+                    class="after"
+                    style="
+                      color: rgba(0, 0, 0, 0.9);
+                      font-weight: 500;
+                      font-size: 17px;
+                      font-family: sans-serif;
+                    "
+                    href="#"
+                    class="after"
+                    id="after"
+                    onclick="dropdownStart()"
+                  >
+                    Eng
+                  </a>
+                  <div class="dropdown-menu1" id="dropdown-menu">
+                    <a class="dropdown-item1" href="#">O'zbekcha</a>
+                    <a
+                      class="dropdown-item1"
+                      href="../../Russia/search/search.html"
+                      >Русский</a
+                    >
+                    <a class="dropdown-item1 active" href="./search.html"
+                      >English</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-item navbar-item3">
+            <ul>
+              <li style="padding-top: 7px">
+                <a href="#" class="after" id="after" onclick="dropdownStart1()">
+                  Eng
+                </a>
+                <div
+                  class="dropdown-menu1 joyi"
+                  style="left: 0; top: 50px"
+                  id="dropdown-menu1"
+                >
+                  <a class="dropdown-item" href="#">O'zbekcha</a>
+                  <a
+                    class="dropdown-item"
+                    href="../../Russia/search/search.html"
+                    >Русский</a
+                  >
+                  <a class="dropdown-item active" href="./search.html"
+                    >English</a
+                  >
+                </div>
+              </li>
+              <li class="li li1">
+                <a href="./search.html">
+                  <img src="../menu/img/ic_search.svg" alt="" />
+                </a>
+              </li>
+              <li class="li">
+                <a href="#">
+                  <img
+                    onclick="chaqir()"
+                    src="../menu/img/ic_profile.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="li">
+                <a href="#">
+                  <img
+                    onclick="backetOpen()"
+                    src="../menu/img/ic_cart.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+      <div class="clear"></div>
+      <div class="button-fixed">
+        <a href="#"> Write to us </a>
+      </div>
+      <!-- searching start -->
+      <div class="search">
+        <div class="search-items">
+          <div class="search-title">
+            <h1>Search</h1>
+          </div>
+          <div class="search-form">
+            <form>
+              <input
+                type="search"
+                id="input"
+                class="input"
+                placeholder="What are you looking for?"
+              />
+              <button title="Searching" class="btn">Search</button>
+            </form>
+          </div>
+          <div class="search-p">
+            <p>Nothing found</p>
+          </div>
+        </div>
+      </div>
+      <!-- searching end -->
+
+      <!-- footer start -->
+      <div class="footer">
+        <div class="footer-icon">
+          <img src="../images/girl.png" alt="" />
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li><a href="../about/about.html">About</a></li>
+            <li><a href="./menu/index.html">Меnu</a></li>
+            <li><a href="../Новости/Hoвости.html">News</a></li>
+            <li><a href="../restoran/restoran.html">Restaurants</a></li>
+            <li><a href="../ПубличнаяOферта/main.html">Public offer</a></li>
+            <li><a href="../karera/karera.html">Career</a></li>
+            <li><a href="../contact/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="footer-tginsfac">
+          <div class="fac">
+            <a href="https://www.facebook.com/Safia.uz" target="_blank">
+              <img src="../images/ic_facebook.png" alt="" />
+            </a>
+          </div>
+          <div class="ins">
+            <a href="https://www.instagram.com/safia_uz/" target="_blank">
+              <img src="../images/ic_instagram.png" alt="" />
+            </a>
+          </div>
+          <div class="tg">
+            <a href="https://t.me/safia_uzbot" target="_blank">
+              <img src="../images/ic_telegram.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <p>2021 Safia Cafe & Bakery. All rights reserved.</p>
+      </div>
+      <!-- footer end -->
+    </div>
+    <script src="./search.js"></script>
+  </body>
+</html>

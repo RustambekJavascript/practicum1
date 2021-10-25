@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confectionery house | Safia Cafe & Bakery</title>
+    <link rel="icon" href="./menu/img/girl.png" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body id="body1">
+    <div class="container">
+      <div class="container-modal" id="modal" style="display: none">
+        <div class="modal">
+          <div class="modal-exit">
+            <img
+              onclick="yop()"
+              style="cursor: pointer; width: 25px; height: 25px"
+              src="https://img.icons8.com/ios/50/000000/close-window.png"
+            />
+          </div>
+          <div class="modal-img-logo">
+            <img src="../menu/img/logo.svg" alt="" />
+          </div>
+          <div class="modal-input">
+            <input type="text" placeholder="Enter your phone number" />
+          </div>
+          <div class="modal-button">
+            <button type="submit">Continue</button>
+          </div>
+        </div>
+      </div>
+      <div class="backet" id="backet" style="display: none">
+        <div class="inside-backet">
+          <div class="backet-title">
+            <p>Cart</p>
+            <img
+              onclick="yop()"
+              style="cursor: pointer; width: 25px; height: 25px"
+              src="https://img.icons8.com/ios/50/000000/close-window.png"
+            />
+          </div>
+          <div class="product">
+            <p>Your basket is empty <br />Please add products</p>
+          </div>
+        </div>
+      </div>
+      <!-- navbar start -->
+      <div class="navbar">
+        <div class="navbar-items">
+          <div class="navbar-item navbar-item1">
+            <a href="#" class="navbar-brend">
+              <img src="./menu/img/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="navbar-item navbar-item2">
+            <ul>
+              <li><a href="#">Таshkent</a></li>
+              <li>
+                <a href="./about/about.html" style="vertical-align: middle"
+                  >About</a
+                >
+              </li>
+              <li><a href="./menu/index.html">Мenu</a></li>
+              <li><a href="./Новости/Hoвости.html">News</a></li>
+              <li><a href="./restoran/restoran.html">Restaurants</a></li>
+              <li><a href="./contact/contact.html">Contacts</a></li>
+              <li>
+                <a href="#">
+                  <span
+                    style="display: block; font-size: 20px; line-height: 21px"
+                    >+998 78 113 40 40</span
+                  >
+                  <span
+                    style="
+                      display: block;
+                      font-size: 14px;
+                      text-transform: none;
+                      text-align: center;
+                    "
+                    >Daily from 8:00 до 23:00</span
+                  >
+                </a>
+              </li>
+            </ul>
+            <div class="navbar-item2_menu">
+              <div class="navbar-item2_menuLogo">
+                <img
+                  onclick="menu()"
+                  src="./menu/img/menu.svg"
+                  style="cursor: pointer"
+                  alt=""
+                />
+                <a href="#" class="navbar-brend">
+                  <img style="height: 60px" src="./menu/img/logo.svg" alt="" />
+                </a>
+              </div>
+              <ul id="ul-menu">
+                <li><a href="#">Таskent</a></li>
+                <li>
+                  <a href="./about/about.html" style="vertical-align: middle"
+                    >About</a
+                  >
+                </li>
+                <li><a href="./menu/index.html">Menu</a></li>
+                <li><a href="./Новости/Hoвости.html">News</a></li>
+                <li><a href="./restoran/restoran.html">Restaurants</a></li>
+                <li><a href="./contact/contact.html">Contacts</a></li>
+                <li>
+                  <a
+                    class="after"
+                    style="
+                      color: rgba(0, 0, 0, 0.9);
+                      font-weight: 500;
+                      font-size: 17px;
+                      font-family: sans-serif;
+                    "
+                    href="#"
+                    class="after"
+                    id="after"
+                    onclick="dropdownStart()"
+                  >
+                    Eng
+                  </a>
+                  <div class="dropdown-menu1" id="dropdown-menu">
+                    <a class="dropdown-item1" href="#">O'zbekcha</a>
+                    <a class="dropdown-item1" href="../Russia/index.html"
+                      >Русский</a
+                    >
+                    <a class="dropdown-item1 active" href="./index.html"
+                      >English</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-item navbar-item3">
+            <ul>
+              <li style="padding-top: 7px">
+                <a href="#" class="after" id="after" onclick="dropdownStart1()">
+                  Eng
+                </a>
+                <div
+                  class="dropdown-menu1 joyi"
+                  style="left: 0; top: 50px"
+                  id="dropdown-menu1"
+                >
+                  <a class="dropdown-item" href="#">O'zbekcha</a>
+                  <a class="dropdown-item" href="../Russia/index.html"
+                    >Русский</a
+                  >
+                  <a class="dropdown-item active" href="./index.html"
+                    >English</a
+                  >
+                </div>
+              </li>
+              <li class="li li1">
+                <a href="./search/search.html">
+                  <img src="./menu/img/ic_search.svg" alt="" />
+                </a>
+              </li>
+              <li class="li">
+                <a href="#">
+                  <img
+                    onclick="chaqir()"
+                    src="./menu/img/ic_profile.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="li">
+                <a href="#">
+                  <img
+                    onclick="backetOpen()"
+                    src="./menu/img/ic_cart.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+      <div class="button-fixed">
+        <a href="#"> Write to us</a>
+      </div>
+      <!-- kiev tort star -->
+      <div class="kiev-tort">
+        <a href="./menu/index.html">
+          <img style="width: 100%" src="./menu/img/kievtort.jpg" alt=""
+        /></a>
+      </div>
+      <!-- kiev tort end -->
+
+      <!-- menu-list -->
+      <div class="menu-list">
+        <div class="menu-list-title">
+          <h1>Safia confectionery house in Tashkent</h1>
+          <h2>Our Menu</h2>
+        </div>
+        <div class="menu-list-items">
+          <div class="menu-list-item"><a href="#">Get the goodies here</a></div>
+          <div class="menu-list-item"><a href="#">Semi-products</a></div>
+          <div class="menu-list-item"><a href="#">Coffee grounds</a></div>
+          <!-- <div class="menu-list-item"><a href="#">Кофе в зёрнах</a></div>
+          <div class="menu-list-item"><a href="#">Ресторан Люмьер 🍽️</a></div> -->
+        </div>
+        <div class="menu-list-nav">
+          <ul>
+            <li class="li1"><a href="#">Cakes</a></li>
+            <li class="li2"><a class="a2" href="#">Big cakes</a></li>
+            <li class="li3"><a href="#"> Round pies</a></li>
+            <li class="li4"><a href="#">Big pies</a></li>
+            <li class="li5"><a href="#">Pastry</a></li>
+            <li class="li6"><a href="#">Puff pastry</a></li>
+            <li class="li7"><a href="#">Eclairs</a></li>
+            <li class="li8"><a href="#">Chak - chak</a></li>
+            <li class="li9"><a href="#">Tartlets</a></li>
+            <li class="li10"><a href="#">Cakes</a></li>
+            <li class="li11"><a href="#">Cookies</a></li>
+            <li class="li12"><a href="#">Muffins</a></li>
+            <li class="li13"><a href="#">Macarons</a></li>
+            <li class="li14"><a href="#">Meat and savory pastries </a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- menu-list end -->
+
+      <!--cards start-->
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort3.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort3.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort3.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort3.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort3.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort3.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort3.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort3.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./menu/img/tort3.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra cake</h5>
+            <p>
+              Juicy, soaked cake with vanilla and chocolate muffin biscuit.
+              Yogurt souffle, with nectarine slices and seasonal berries. The
+              cake is for 10 - 12 persons.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Add</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cards end -->
+
+      <!-- advantage start -->
+      <div class="advantage">
+        <div class="advantage-title">
+          <h1>Our advantages</h1>
+          <h3>WE CREATE 1000 REASONS FOR SMILE!</h3>
+          <p>
+            A great example of a successful family business. This is a place
+            where confectionery excellence is distinguished not only by
+            exceptional taste, but also a work of art. Every day, professionals
+            in their field work on the creation of cakes and sweets to give your
+            home a holiday!
+          </p>
+          <p>
+            We invite you to experience true pleasure. And not only from the
+            taste of our desserts, but also from exclusive dishes prepared by
+            top-level chefs and, of course, unique drinks created by the best
+            bartenders!
+          </p>
+        </div>
+      </div>
+      <!-- advantage end -->
+
+      <!-- footer img start -->
+      <div class="footer-img">
+        <div class="img1">
+          <img src="./images/a-1.jpg" alt="" />
+          <p>
+            Best <br />
+            coffee
+          </p>
+        </div>
+        <div class="img2">
+          <img src="./images/a-2.jpg" alt="" />
+          <p>
+            Large selection <br />
+            Baking
+          </p>
+        </div>
+        <div class="img3">
+          <img src="./images/a-3.jpg" alt="" />
+          <p>
+            unforgettable <br />
+            desserts
+          </p>
+        </div>
+        <div class="img4">
+          <img src="./images/a-4.jpg" alt="" />
+          <p>
+            delivery to any <br />
+            point of the city
+          </p>
+        </div>
+      </div>
+      <!-- footer img end -->
+
+      <!-- o nac start -->
+      <div class="nac">
+        <div class="nac-item">
+          <div class="nac-item-title">
+            <h1>About</h1>
+            <p class="p1">
+              Safia's pastry shop chain is a family business whose history began
+              with amateur pastry chef Muhayo Ayupova. Her hard work and love of
+              home baking prompted her to go beyond the family kitchen in 2001
+              and start baking for sale, first for relatives, friends, and
+              neighbors. Her husband, Akmal Ayupov, supports Muhayo's creative
+              endeavors and organizes the finished products' delivery.
+            </p>
+            <br />
+            <p class="p2">
+              In 2007, Mukhayo Ayupova's daughter, Madina Akmalovna, opened her
+              first home bakery shop. She inspires by the family's successful
+              experience and implements her ideas, recipes, and taste. Thanks to
+              her culinary experience and pastry skills, the pastry shop's
+              products have become what they are loved and known for: tasty,
+              beautiful, and high quality.
+            </p>
+            <a href="#">More</a>
+          </div>
+          <div class="nac-item-img">
+            <img
+              style="width: 245px; height: 360px"
+              src="./images/oshpazTogo.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- o nac end -->
+
+      <!--contact start -->
+      <div class="contact">
+        <div class="contact-title">
+          <h1>Contact us</h1>
+        </div>
+        <div class="contact-items">
+          <div class="img-left">
+            <img
+              style="width: 250px; height: 176px"
+              src="./images/envelop-icon.png"
+              alt=""
+            />
+          </div>
+          <div class="text-right">
+            <h3>
+              Feel free to contact us anytime. We will get back to you as soon
+              as we can.
+            </h3>
+            <div class="input-rigth">
+              <form>
+                <input class="input" type="text" placeholder="Name" required />
+                <div class="help-input">You must fill in the "full name".</div>
+                <input
+                  class="input"
+                  type="tel"
+                  required
+                  placeholder="Phone number"
+                />
+                <div class="help-input">
+                  It is necessary to fill in the "Phone number".
+                </div>
+                <input
+                  class="input"
+                  type="text"
+                  required
+                  placeholder="Message"
+                />
+                <div class="help-input">
+                  It is necessary to fill in the "Messages".
+                </div>
+                <button class="btn">Send<a href="#"></a></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--contact end -->
+
+      <!-- footer start -->
+      <div class="footer">
+        <div class="footer-icon">
+          <img src="./images/girl.png" alt="" />
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li><a href="./about/about.html">About</a></li>
+            <li><a href="./menu/index.html">Мenu</a></li>
+            <li><a href="./Новости/Hoвости.html">News</a></li>
+            <li><a href="./restoran/restoran.html">Restaurants</a></li>
+            <li><a href="./ПубличнаяOферта/main.html">Public offer</a></li>
+            <li><a href="./karera/karera.html">Career</a></li>
+            <li><a href="./contact/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="footer-tginsfac">
+          <div class="fac">
+            <a href="https://www.facebook.com/Safia.uz" target="_blank">
+              <img src="./images/ic_facebook.png" alt="" />
+            </a>
+          </div>
+          <div class="ins">
+            <a href="https://www.instagram.com/safia_uz/" target="_blank">
+              <img src="./images/ic_instagram.png" alt="" />
+            </a>
+          </div>
+          <div class="tg">
+            <a href="https://t.me/safia_uzbot" target="_blank">
+              <img src="./images/ic_telegram.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <p>2021 Safia Cafe & Bakery. All rights reserved.</p>
+      </div>
+      <!-- footer end -->
+    </div>
+    <script src="./Js/app.js"></script>
+  </body>
+</html>

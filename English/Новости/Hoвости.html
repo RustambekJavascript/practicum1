@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News | Safia Cafe & Bakery</title>
+    <link rel="icon" href="../images/girl.png" />
+    <link rel="stylesheet" href="./Hoвости.css" />
+  </head>
+  <body id="body1">
+    <div class="container">
+      <div class="container-modal" id="modal" style="display: none">
+        <div class="modal">
+          <div class="modal-exit">
+            <img
+              onclick="yop()"
+              style="cursor: pointer; width: 25px; height: 25px"
+              src="https://img.icons8.com/ios/50/000000/close-window.png"
+            />
+          </div>
+          <div class="modal-img-logo">
+            <img src="../menu/img/logo.svg" alt="" />
+          </div>
+          <div class="modal-input">
+            <input type="text" placeholder="Enter your phone number" />
+          </div>
+          <div class="modal-button">
+            <button type="submit">Continue</button>
+          </div>
+        </div>
+      </div>
+      <div class="backet" id="backet" style="display: none">
+        <div class="inside-backet">
+          <div class="backet-title">
+            <p>Cart</p>
+            <img
+              onclick="yop()"
+              style="cursor: pointer; width: 25px; height: 25px"
+              src="https://img.icons8.com/ios/50/000000/close-window.png"
+            />
+          </div>
+          <div class="product">
+            <p>Your basket is empty <br />Please add products</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- navbar start -->
+      <div class="navbar">
+        <div class="navbar-items">
+          <div class="navbar-item navbar-item1">
+            <a href="#" class="navbar-brend">
+              <img src="../menu/img/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="navbar-item navbar-item2">
+            <ul>
+              <li><a href="#">Таshkent</a></li>
+              <li>
+                <a href="../about/about.html" style="vertical-align: middle"
+                  >About</a
+                >
+              </li>
+              <li><a href="../menu/index.html">Меnu</a></li>
+              <li><a href="Hoвости.html">News</a></li>
+              <li><a href="../restoran/restoran.html">Restaurants</a></li>
+              <li><a href="../contact/contact.html">Contacts</a></li>
+              <li>
+                <a href="#">
+                  <span
+                    style="display: block; font-size: 20px; line-height: 21px"
+                    >+998 78 113 40 40</span
+                  >
+                  <span
+                    style="
+                      display: block;
+                      font-size: 14px;
+                      text-transform: none;
+                      text-align: center;
+                    "
+                    >Daily form 8:00 до 23:00</span
+                  >
+                </a>
+              </li>
+            </ul>
+            <div class="navbar-item2_menu">
+              <div class="navbar-item2_menuLogo">
+                <img
+                  onclick="menu()"
+                  src="../menu/img/menu.svg"
+                  style="cursor: pointer"
+                  alt=""
+                />
+                <a href="#" class="navbar-brend">
+                  <img style="height: 60px" src="../menu/img/logo.svg" alt="" />
+                </a>
+              </div>
+              <ul id="ul-menu">
+                <li><a href="#">Таshkent</a></li>
+                <li>
+                  <a href="../about/about.html" style="vertical-align: middle"
+                    >About</a
+                  >
+                </li>
+                <li><a href="../menu/index.html">Меnu</a></li>
+                <li><a href="Hoвости.html">News</a></li>
+                <li><a href="../restoran/restoran.html">Restaurants/a></li>
+                <li><a href="../contact/contact.html">Contacts</a></li>
+                <li>
+                  <a
+                    class="after"
+                    style="
+                      color: rgba(0, 0, 0, 0.9);
+                      font-weight: 500;
+                      font-size: 17px;
+                      font-family: sans-serif;
+                    "
+                    href="#"
+                    class="after"
+                    id="after"
+                    onclick="dropdownStart()"
+                  >
+                    Eng
+                  </a>
+                  <div class="dropdown-menu1" id="dropdown-menu">
+                    <a class="dropdown-item1" href="#">O'zbekcha</a>
+                    <a
+                      class="dropdown-item1"
+                      href="../../Russia/Новости/Hoвости.html"
+                      >Русский</a
+                    >
+                    <a class="dropdown-item1 active" href="./Hoвости.html"
+                      >English</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-item navbar-item3">
+            <ul>
+              <li style="padding-top: 7px">
+                <a href="#" class="after" id="after" onclick="dropdownStart1()">
+                  Eng
+                </a>
+                <div
+                  class="dropdown-menu1 joyi"
+                  style="left: 0; top: 50px"
+                  id="dropdown-menu1"
+                >
+                  <a class="dropdown-item" href="#">O'zbekcha</a>
+                  <a
+                    class="dropdown-item"
+                    href="../../Russia/Новости/Hoвости.html"
+                    >Русский</a
+                  >
+                  <a class="dropdown-item active" href="./Hoвости.html"
+                    >English</a
+                  >
+                </div>
+              </li>
+              <li class="li li1">
+                <a href="../search/search.html">
+                  <img src="../menu/img/ic_search.svg" alt="" />
+                </a>
+              </li>
+              <li class="li">
+                <a href="#">
+                  <img
+                    onclick="chaqir()"
+                    src="../menu/img/ic_profile.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="li">
+                <a href="#">
+                  <img
+                    onclick="backetOpen()"
+                    src="../menu/img/ic_cart.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+      <div class="clear"></div>
+      <div class="button-fixed">
+        <a href="#"> Writy to us </a>
+      </div>
+      <!-- cards start -->
+      <div class="cards">
+        <div class="card">
+          <div class="card-item">
+            <div class="card-img" style="height: 262px">
+              <img src="./img/1-rasm.jpg" alt="" />
+            </div>
+            <div class="card-title card-title1" style="margin-top: -265px">
+              <h1>
+                I am opening the second large <br />
+                confectionery house in the Sergeli <br />
+                district!
+              </h1>
+              <br /><br />
+              <p>
+                And this is a 2-storey building, where it is incredibly cozy, light and deliciously smells of your favorite pastries?
+
+                <br /><br />
+                Of course, I know you have been waiting for this for a very long time, therefore, I will make this event bright and fun!
+                <br /><br />
+                On August 14 at 18:30 I will be waiting for you at:
+                ? Birlik street, 18 a, landmark: restaurant "Elegant", opposite the music school.
+
+
+              </p>
+              <div class="card-link">
+                <a href="#"> More... </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-img">
+              <img src="./img/2-rasm.jpg" alt="" />
+            </div>
+            <div class="card-title card-title2">
+              <h1>My dear sweet teeth ❤️</h1>
+              <br /><br />
+              <p>
+                I am glad to inform you that my sweet house became a participant of the "UzBrand 2020" competition in the nomination of the best coffee house ?
+
+                <br /><br />
+                ? Support and vote for me if you love my candy house ?
+
+                <br /><br />
+                Also, let's together ? vote for our friends:
+                <br /><br />
+                ✅ Najot Ta’lim
+                <br /><br />
+                ✅ Cambridge Learning Center
+                <br /><br />
+                ✅ Les Ailes
+                <br /><br />
+                Together we will definitely win
+                <br /><br />
+                Follow the link and leave votes ? t.me/makon_brand_bot
+              </p>
+              <br />
+              <div class="card-link">
+                <a href="#"> More... </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-img">
+              <img src="./img/3-rasm.jpg" alt="" />
+            </div>
+            <div class="card-title card-title3" style="margin-top: -375px">
+              <h1>Did you know?</h1>
+              <br /><br />
+              <p>
+                On Saturday (20.02.2021) a very interesting interview was released with the participation of one of the founders of Safia, who is currently the company's director of development?
+                <br />
+                <br />
+                In it, Bekzod Samikzhonov, shared the fascinating story of the creation and development of your favorite confectionery chain?
+
+                <br />
+                <br />
+               You can watch the full interview ❤️ at the link: https://www.youtube.com/watch?v=RP3IRLHi5YE&feature=youtu.be
+              </p>
+              <div class="card-link">
+                <a href="#"> More... </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2-qator -->
+          <div class="card-item">
+            <div class="card-img" style="height: 262px">
+              <img src="./img/4-rasm.jpg" alt="" />
+            </div>
+            <div class="card-title card-title4">
+              <h1>
+                A new tale begins, a new page of <br />
+                history
+              </h1>
+              <br /><br />
+              <p>
+                Thanks to Irina Moshkina (Gold medalist of the Russian Championship in confectionery art), did magic cakes appear in my confectionery house? The beauty of which is very difficult to describe❤️
+
+                <br /><br />
+                I suggest you just admire?
+                <br /><br />
+                You can order these incredible cakes for yourself in 3 days, the price is 120,000 per 1 kg of cake.
+              </p>
+              <div class="card-link">
+                <a href="#"> More... </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-img">
+              <img src="./img/5-rasm.jpg" alt="" />
+            </div>
+            <div class="card-title card-title5">
+              <h1>
+                Hello to all residents of the TTZ area Have you been waiting for the opening of my sweet house?
+              </h1>
+              <br /><br />
+              <p>
+                &nbsp;I am glad to inform you that the official opening of the branch will take place on Thursday (08.04.2021) at 17.00 On the opening day you will find:а
+                <br /><br />
+    
+                ? Contests <br>
+                  ? Prizes <br>
+                  ? Gifts <br>
+                  ? Cotton candy and more
+
+                <br /><br />
+                
+                I will look forward to seeing you on Thursday at this location:
+                <br /><br />
+                Mirzo Ulugbek District, Yuzrabot Street, 53 Building
+                <br /><br />
+                With love Safia❤️
+              </p>
+              <br />
+              <div class="card-link">
+                <a href="#"> More... </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-img">
+              <img src="./img/6-rasm.jpg" alt="" />
+            </div>
+            <div class="card-title card-title6">
+              <h1>An important event you shouldn't miss</h1>
+              <br /><br />
+              <p>
+                An important event you shouldn't miss
+                <br />
+                <br />
+                How long my team has been going to open a branch near Parkent Market? And, finally, the day has come ❤️
+                <br />
+                <br />
+                In a brand-new, absolutely gorgeous house, my light pastry house has opened, which will please you every day. ?Now I'm here: Mirzo Ulugbek district, Parkent street , 215. Landmark: Makro Supermarket
+                <br><br>
+                Our affiliate will welcome you with consultants who will be happy to help you decide ❤️
+                <br><br>
+                Looking forward to seeing you friends 
+              </p>
+              <div class="card-link">
+                <a href="#"> More... </a>
+              </div>
+            </div>
+          </div>
+          <!-- 3-qator -->
+          <div class="card-item">
+            <div class="card-img" style="height: 262px">
+              <img src="./img/7-rasm.jpg" alt="" />
+            </div>
+            <div class="card-title card-title7" style="margin-top: 60px">
+              <h1>On March 13th this photo will become real?</h1>
+              <br /><br />
+              <p>
+                On March 13th these photos will become real?
+                After all, we are opening a new branch for this project
+                <br /><br />
+                I am glad to invite you to a fun discovery for you and your children:
+                <br />
+                ?Contests <br>
+                ? Prizes <br>
+                ?Gifts <br>
+                ? Cotton candy <br>
+                ? Meet the founders <br>
+                This is all for you to introduce you to the new location in the city of Tashkent?
+                <br /><br />
+
+                ⭐️Time: 17: 00
+                ?Address: Nukus street, 39. Object orient: store "Baby House" and "Still Young"
+              </p>
+              <div class="card-link">
+                <a href="#"> More... </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-img">
+              <img src="./img/8-rasm.jpg" alt="" />
+            </div>
+            <div class="card-title card-title8" style="margin-top: -180px">
+              <h1>As you drive past, take a moment to find some sweets.</h1>
+              <br /><br />
+              <p>
+                Another branch in this month, now in an even more convenient location.
+                We've opened a new branch on the Small ring road, landmark: Korzinka Airport and we're waiting for everyone to visit.
+                Delight yourself with fresh and delicious pastries and, most importantly, in a large assortment
+                We give you a great mood from our excellent staff
+              </p>
+              <br />
+              <div class="card-link">
+                <a href="#"> More... </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-img">
+              <img src="./img/9-rasm.jpg" alt="" />
+            </div>
+            <div class="card-title card-title9" style="margin-top: -190px">
+              <h1>
+                Look at the wonderful place we opened for you on October 22
+              </h1>
+              <br /><br />
+              <p>
+                Our new branch will locate at 67, Yalangach Massif, landmark: 500 m after Lokomotiv Park (near Chimgan crossroads).
+                You can enjoy your shopping and have a cup of tea with the most delicious cake.
+                <br><br>
+                Looking forward to seeing you every day!
+              </p>
+              <div class="card-link">
+                <a href="#"> More... </a>
+              </div>
+            </div>
+          </div>
+          <!-- 4-qator -->
+          <div class="card-item">
+            <div class="card-img" style="height: 262px">
+              <img src="./img/10-rasm.jpg" alt="" />
+            </div>
+            <div class="card-title card-title10" style="margin-top: 60px">
+              <h1>I know you love good news!</h1>
+              <br /><br />
+              <p>
+                That's why my posh confectioners and I are launching a new series of marshmallows.
+                Now, you can try the following flavors at our branches:
+                <br /><br />
+                Citrus <br>
+                Cherry <br>
+                Apple <br>
+                And the classic marshmallows.
+                <br>
+                And for those who like to surprise their loved ones, we have prepared a gift box.
+                Delight yourself and your loved ones with a sweet gift
+              </p>
+              <div class="card-link">
+                <a href="#"> More... </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-img">
+              <img src="./img/11-rasm.jpg" alt="" />
+            </div>
+            <div class="card-title card-title11" style="margin-top: -50px">
+              <h1>New for brand new!</h1>
+              <br /><br />
+              <p>
+                Get a picture of the "Victoria" cake! It consists of a tender strawberry pistachio cake with a chocolate chiffon biscuit impregnated with raspberry juice stuffing - chocolate Chantilly cream, crispy chocolate blossoms, and strawberries.
+                The most delicious novelties are for you only!
+              </p>
+              <br />
+              <div class="card-link">
+                <a href="#"> More... </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cards end -->
+      <!-- footer start -->
+      <div class="footer">
+        <div class="footer-icon">
+          <img src="../images/girl.png" alt="" />
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li><a href="../about/about.html">About</a></li>
+            <li><a href="../menu/index.html">Меnu</a></li>
+            <li><a href="Hoвости.html">News</a></li>
+            <li><a href="../restoran/restoran.html">Restaurants</a></li>
+            <li><a href="../ПубличнаяOферта/main.html">Public offer</a></li>
+            <li><a href="../karera/karera.html">Career</a></li>
+            <li><a href="../contact/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="footer-tginsfac">
+          <div class="fac">
+            <a href="https://www.facebook.com/Safia.uz" target="_blank">
+              <img src="../images/ic_facebook.png" alt="" />
+            </a>
+          </div>
+          <div class="ins">
+            <a href="https://www.instagram.com/safia_uz/" target="_blank">
+              <img src="../images/ic_instagram.png" alt="" />
+            </a>
+          </div>
+          <div class="tg">
+            <a href="https://t.me/safia_uzbot" target="_blank">
+              <img src="../images/ic_telegram.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <p>2021 Safia Cafe & Bakery. All rights reserved.</p>
+      </div>
+      <!-- footer end -->
+    </div>
+    <script src="Hoвости.js"></script>
+  </body>
+</html>
