@@ -8,8 +8,43 @@
     <link rel="icon" href="../images/girl.png" />
     <link rel="stylesheet" href="./restoran.css" />
   </head>
-  <body>
+  <body id="body1">
     <div class="container">
+      <div class="container-modal" id="modal" style="display: none">
+        <div class="modal">
+          <div class="modal-exit">
+            <img
+              onclick="yop()"
+              style="cursor: pointer; width: 25px; height: 25px"
+              src="https://img.icons8.com/ios/50/000000/close-window.png"
+            />
+          </div>
+          <div class="modal-img-logo">
+            <img src="../menu/img/logo.svg" alt="" />
+          </div>
+          <div class="modal-input">
+            <input type="text" placeholder="Введите номер телефона" />
+          </div>
+          <div class="modal-button">
+            <button type="submit">Далее</button>
+          </div>
+        </div>
+      </div>
+      <div class="backet" id="backet" style="display: none">
+        <div class="inside-backet">
+          <div class="backet-title">
+            <p>Корзина</p>
+            <img
+              onclick="yop()"
+              style="cursor: pointer; width: 25px; height: 25px"
+              src="https://img.icons8.com/ios/50/000000/close-window.png"
+            />
+          </div>
+          <div class="product">
+            <p>Ваша корзина пуста. <br />Пожалуйста добавьте продукты</p>
+          </div>
+        </div>
+      </div>
       <!-- navbar start -->
       <div class="navbar">
         <div class="navbar-items">
@@ -113,18 +148,26 @@
                 </div>
               </li>
               <li class="li li1">
-                <a href="./search.html">
+                <a href="../search/search.html">
                   <img src="../menu/img/ic_search.svg" alt="" />
                 </a>
               </li>
               <li class="li">
                 <a href="#">
-                  <img src="../menu/img/ic_profile.png" alt="" />
+                  <img
+                    onclick="chaqir()"
+                    src="../menu/img/ic_profile.png"
+                    alt=""
+                  />
                 </a>
               </li>
               <li class="li">
                 <a href="#">
-                  <img src="../menu/img/ic_cart.png" alt="" />
+                  <img
+                    onclick="backetOpen()"
+                    src="../menu/img/ic_cart.png"
+                    alt=""
+                  />
                 </a>
               </li>
             </ul>
@@ -133,6 +176,9 @@
       </div>
       <!-- navbar end -->
       <div class="clear"></div>
+      <div class="button-fixed">
+        <a href="#"> Напишите нам </a>
+      </div>
       <!-- iframe start -->
       <div class="karta">
         <iframe
