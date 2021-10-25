@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biz haqimizda | Safia Cafe & Bakery</title>
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="icon" href="../menu/img/girl.png" />
+  </head>
+  <body id="body1">
+    <div class="container">
+      <div class="container-modal" id="modal" style="display: none">
+        <div class="modal">
+          <div class="modal-exit">
+            <img
+              onclick="yop()"
+              style="cursor: pointer; width: 25px; height: 25px"
+              src="https://img.icons8.com/ios/50/000000/close-window.png"
+            />
+          </div>
+          <div class="modal-img-logo">
+            <img src="../menu/img/logo.svg" alt="" />
+          </div>
+          <div class="modal-input">
+            <input type="text" placeholder="Telefon raqamingizni kiriting" />
+          </div>
+          <div class="modal-button">
+            <button type="submit">Davom etish</button>
+          </div>
+        </div>
+      </div>
+      <div class="backet" id="backet" style="display: none">
+        <div class="inside-backet">
+          <div class="backet-title">
+            <p>Savatcha</p>
+            <img
+              onclick="yop()"
+              style="cursor: pointer; width: 25px; height: 25px"
+              src="https://img.icons8.com/ios/50/000000/close-window.png"
+            />
+          </div>
+          <div class="product">
+            <p>
+              Sizning savatchangiz bo'sh <br />Iltimos biror narsa harid qiling
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- navbar start -->
+      <div class="navbar">
+        <div class="navbar-items">
+          <div class="navbar-item navbar-item1">
+            <a href="#" class="navbar-brend">
+              <img src="../menu/img/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="navbar-item navbar-item2">
+            <ul>
+              <li><a href="#">Тoshkent</a></li>
+              <li>
+                <a href="./about.html" style="vertical-align: middle"
+                  >Biz haqimizda</a
+                >
+              </li>
+              <li><a href="../menu/index.html">Menyu</a></li>
+              <li><a href="../Новости/Hoвости.html">Yangiliklar</a></li>
+              <li><a href="../restoran/restoran.html">Restoranlar</a></li>
+              <li><a href="../contact/contact.html">Aloqa</a></li>
+              <li>
+                <a href="#">
+                  <span
+                    style="display: block; font-size: 20px; line-height: 21px"
+                    >+998 78 113 40 40</span
+                  >
+                  <span
+                    style="
+                      display: block;
+                      font-size: 14px;
+                      text-transform: none;
+                      text-align: center;
+                    "
+                  >
+                    8:00 23:00</span
+                  >
+                </a>
+              </li>
+            </ul>
+            <div class="navbar-item2_menu">
+              <div class="navbar-item2_menuLogo">
+                <img
+                  onclick="menu()"
+                  src="../menu/img/menu.svg"
+                  style="cursor: pointer"
+                  alt=""
+                />
+                <a href="#" class="navbar-brend">
+                  <img style="height: 60px" src="../menu/img/logo.svg" alt="" />
+                </a>
+              </div>
+              <ul id="ul-menu">
+                <li><a href="#">Toshkent</a></li>
+                <li>
+                  <a href="../about/about.html" style="vertical-align: middle"
+                    >Biz haqimizda</a
+                  >
+                </li>
+                <li><a href="../menu/index.html">Меnyu</a></li>
+                <li><a href="../Новости/Hoвости.html">Yangiliklar</a></li>
+                <li><a href="../restoran/restoran.html">Restoranlar</a></li>
+                <li><a href="../contact/contact.html">Aloqa/a></li>
+                <li>
+                  <a
+                    class="after"
+                    style="
+                      color: rgba(0, 0, 0, 0.9);
+                      font-weight: 500;
+                      font-size: 17px;
+                      font-family: sans-serif;
+                    "
+                    href="#"
+                    class="after"
+                    id="after"
+                    onclick="dropdownStart()"
+                  >
+                    O'zb
+                  </a>
+                  <div class="dropdown-menu1" id="dropdown-menu">
+                    <a class="dropdown-item1 active" href="./about.html">O'zbekcha</a>
+                    <a class="dropdown-item1 " href="../../Russia/about/about.html"
+                      >Русский</a
+                    >
+                    <a
+                      class="dropdown-item1"
+                      href="../../English/about/about.html"
+                      >English</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-item navbar-item3">
+            <ul>
+              <li style="padding-top: 7px">
+                <a href="#" class="after" id="after" onclick="dropdownStart1()">
+                  O'zb
+                </a>
+                <div
+                  class="dropdown-menu1 joyi"
+                  style="left: 0; top: 50px"
+                  id="dropdown-menu1"
+                >
+                  <a class="dropdown-item active" href="./about.html">O'zbekcha</a>
+                  <a class="dropdown-item " href="../../Russia/about/about.html"
+                    >Русский</a
+                  >
+                  <a class="dropdown-item" href="../../English/about/about.html"
+                    >English</a
+                  >
+                </div>
+              </li>
+              <li class="li li1">
+                <a href="../search/search.html">
+                  <img src="../menu/img/ic_search.svg" alt="" />
+                </a>
+              </li>
+              <li class="li">
+                <a href="#">
+                  <img
+                    onclick="chaqir()"
+                    src="../menu/img/ic_profile.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="li">
+                <a href="#">
+                  <img
+                    onclick="backetOpen()"
+                    src="../menu/img/ic_cart.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+      <!-- about start -->
+      <div class="button-fixed">
+        <a href="#"> Xabar yozish </a>
+      </div>
+      <div class="about-title">
+        <div class="title">
+          <h1>Biz haqimizda</h1>
+        </div>
+        <div class="refrenc">
+          <div class="refrenc-title">
+            <p>
+              Biz haqimizda Safia qandolat mahsulotlari tarmogʻi – bu oilaviy korxona, uning tarixi havaskor qandolatchi Muxayo Ayupovadan boshlanadi. Uning mehnatsevarligi va uy pishirigʻiga boʻlgan muhabbati uni 2001-yilda oilaviy oshxona doirasidan tashqariga chiqib, avval qarindoshlari, doʻstlari va qoʻshnilariga sotish uchun pishirishni boshlashga undadi. Turmush oʻrtogʻi Akmal Ayupov Muxayoning ijodiy faoliyatini qoʻllab-quvvatlaydi va tayyor mahsulotlarni yetkazib berishni tashkil qiladi.
+
+            </p>
+            <br />
+            <p>
+           2007-yilda Muxayo Ayupovaning qizi Madina Akmalovna birinchi uy pishiriqlari doʻkonni ochdi. U muvaffaqiyatli oilaviy tajribadan ilhomlanib, oʻz gʻoyalarini, retseptlarini, yangi taʼmlarini yaratib, amalda tatbiq etadi. Uning pazandalik tajribasi va qandolatchilik mahorati tufayli qandolat mahsulotlari barchalar sevadigan va biladigan narsalarga aylandi: mazali, goʻzal va yuqori sifatli.
+
+            </p>
+            <br />
+            <p>
+             Vaqt oʻtishi bilan Madina Akmalovnaning oʻgʻillaridan biri boʻlgan Shahzod Alisherovich qandolat tarmogʻini rivojlantirish ishiga qoʻshildi. U filiallarda bar ishlarini tashkil qiladi, moddiy va hisob-kitob buxgalterining vazifalarini bajaradi. Hozirgi paytda Shahzod – samarali moliyaviy modelni yaratgan va korxonadagi  hisob-kitobni avtomatlashtirgan kompaniyaning moliya direktori.
+
+            </p>
+            <br />
+            <p>
+              Madina Akmalovnaning turmush oʻrtogʻi Alisher Samikjonovich filiallar va sexning barcha qurilish va taʼmirlash ishlarini boshqaradi. Uning oltin qoʻllari va oʻtkir zehni tufayli filiallar xushbichim va shinam boʻlib bordi.
+
+            </p>
+            <br />
+            <p>
+             2015-yilda Madina Akmalovnaning oʻgʻli Bekzod Alisherovich oilaviy biznesga qoʻshildi. Yevropada oʻqishni tugatgandan soʻng, u qandolat faoliyatiga yangi gʻoyalar va konsepsiyalarini olib kelib kiritadi. Eng yosh jiyani nomi bilan atalgan “Safia” brendi sevimli pishiriqlarga qoʻshimcha ravishda, turli xil issiq va sovuq ovqatlarga ega qahvaxonalar tarmogʻiga aylanadi.
+
+            </p>
+            <br />
+            <p>
+              Rivojlanishga birgalikda  hissa qoʻshish tufayli kompaniya oʻsishni boshlaydi, birinchi qandolat sexi ochiladi. Yevropadan ish tajribasiga ega qandolatchilar taklif etiladi, mahalliy qandolatchilar esa chet elga malaka oshirish uchun yuboriladi. Shu tufayli, pishiriladigan mahsulotlar turi 450 tagacha koʻpaytirildi.
+
+            </p>
+            <br />
+            <p>
+             Koʻp utmay, betakror jihozlash bilan eksklyuziv tortlarni yaratish boʻyicha individual buyurtma xizmatlari ishga tushirildi.
+            </p>
+            <br />
+            <p>
+              2018-2019-yillarda – shaharning barcha joylarida 12 filiallari ochiladi. Keytering xizmati ishga tushiriladi.
+            </p>
+            <br />
+            <p>
+              Endi bizning kompaniyaning butun shahar boʻylab 30 dan ortiq filiallari mavjud. Va biz 1000 dan ortiq odamlar  – oʻz ishining professionallari biz bilan ishlayotganidan faxrlanamiz.
+            </p>
+          </div>
+          <div class="refrenc-img">
+            <div class="img">
+              <img src="../images/about_img.jpg" alt="" />
+            </div>
+            <div class="refrenc-welcome">
+              <h2>
+                Safiaga xush kelibsiz <br>
+                va yoqimli ishtaha!
+              </h2>
+              <div class="refrenc-imzo">
+                <img style="height: 80px" src="../images/sign-in.png" alt="" />
+              </div>
+              <div class="name">
+                <h1>Madina Ayupova</h1>
+                <br />
+                <span></span>
+                Safia <br>
+                bosh direktori</span>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- about end -->
+      <!-- footer start -->
+      <div class="footer">
+        <div class="footer-icon">
+          <img src="../images/girl.png" alt="" />
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li><a href="about.html">Biz haqimizda</a></li>
+            <li><a href="../menu/index.html">Меnyu</a></li>
+            <li><a href="../Новости/Hoвости.html">Yangiliklar</a></li>
+            <li><a href="../restoran/restoran.html">Restoranlar</a></li>
+            <li><a href="../ПубличнаяOферта/main.html">Foydalanish shartlari</a></li>
+            <li><a href="../karera/karera.html">Кarera</a></li>
+            <li><a href="../contact/contact.html">Aloqa</a></li>
+          </ul>
+        </div>
+        <div class="footer-tginsfac">
+          <div class="fac">
+            <a href="https://www.facebook.com/Safia.uz" target="_blank">
+              <img src="../images/ic_facebook.png" alt="" />
+            </a>
+          </div>
+          <div class="ins">
+            <a href="https://www.instagram.com/safia_uz/" target="_blank">
+              <img src="../images/ic_instagram.png" alt="" />
+            </a>
+          </div>
+          <div class="tg">
+            <a href="https://t.me/safia_uzbot" target="_blank">
+              <img src="../images/ic_telegram.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <p>2021 Safia Cafe & Bakery. Barcha haq-huquqlar himoyalangan.</p>
+      </div>
+      <!-- footer end -->
+    </div>
+    <script src="./about.js"></script>
+  </body>
+</html>

@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Tort Toshkentda sotib olish - Safia tortlari narxi| Safiabakery.uz | Safia
+      Cafe & Bakery
+    </title>
+    <link rel="icon" href="./img/girl.png" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body id="body1">
+    <div class="container">
+      <div class="container-modal" id="modal" style="display: none">
+        <div class="modal">
+          <div class="modal-exit">
+            <img
+              onclick="yop()"
+              style="cursor: pointer; width: 25px; height: 25px"
+              src="https://img.icons8.com/ios/50/000000/close-window.png"
+            />
+          </div>
+          <div class="modal-img-logo">
+            <img src="../menu/img/logo.svg" alt="" />
+          </div>
+          <div class="modal-input">
+            <input type="text" placeholder="Iltimos numeringizni kiriting" />
+          </div>
+          <div class="modal-button">
+            <button type="submit">Davom etish</button>
+          </div>
+        </div>
+      </div>
+      <div class="backet" id="backet" style="display: none">
+        <div class="inside-backet">
+          <div class="backet-title">
+            <p>Savatcha</p>
+            <img
+              onclick="yop()"
+              style="cursor: pointer; width: 25px; height: 25px"
+              src="https://img.icons8.com/ios/50/000000/close-window.png"
+            />
+          </div>
+          <div class="product">
+            <p>
+              Sizning savatchangiz bo'sh <br />Iltimos biror narsa harid qiling
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- navbar start -->
+      <div class="navbar">
+        <div class="navbar-items">
+          <div class="navbar-item navbar-item1">
+            <a href="#" class="navbar-brend">
+              <img src="./img/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="navbar-item navbar-item2">
+            <ul>
+              <li><a href="#">Toshkent</a></li>
+              <li>
+                <a href="../about/about.html" style="vertical-align: middle"
+                  >Biz haqimizda</a
+                >
+              </li>
+              <li><a href="../menu/index.html">Меnyu</a></li>
+              <li><a href="../Новости/Hoвости.html">Yangiliklar</a></li>
+              <li><a href="../restoran/restoran.html">Restoranlar</a></li>
+              <li><a href="../contact/contact.html">Aloqa</a></li>
+              <li>
+                <a href="#">
+                  <span
+                    style="display: block; font-size: 20px; line-height: 21px"
+                    >+998 78 113 40 40</span
+                  >
+                  <span
+                    style="
+                      display: block;
+                      font-size: 14px;
+                      text-transform: none;
+                      text-align: center;
+                    "
+                  >
+                    8:00 23:00</span
+                  >
+                </a>
+              </li>
+            </ul>
+            <div class="navbar-item2_menu">
+              <div class="navbar-item2_menuLogo">
+                <img
+                  onclick="menu()"
+                  src="./img/menu.svg"
+                  style="cursor: pointer"
+                  alt=""
+                />
+                <a href="#" class="navbar-brend">
+                  <img style="height: 60px" src="./img/logo.svg" alt="" />
+                </a>
+              </div>
+              <ul id="ul-menu">
+                <li><a href="#">Toshkent</a></li>
+                <li>
+                  <a href="../about/about.html" style="vertical-align: middle"
+                    >Biz haqimizda</a
+                  >
+                </li>
+                <li><a href="../menu/index.html">Меnyu</a></li>
+                <li><a href="../Новости/Hoвости.html">Yangiliklar</a></li>
+                <li><a href="../restoran/restoran.html">Restoranlar</a></li>
+                <li><a href="../contact/contact.html">Aloqa</a></li>
+                <li>
+                  <a
+                    class="after"
+                    style="
+                      color: rgba(0, 0, 0, 0.9);
+                      font-weight: 500;
+                      font-size: 17px;
+                      font-family: sans-serif;
+                    "
+                    href="#"
+                    class="after"
+                    id="after"
+                    onclick="dropdownStart()"
+                  >
+                    O'zb
+                  </a>
+                  <div class="dropdown-menu1" id="dropdown-menu">
+                    <a class="dropdown-item1 active" href="./index.html"
+                      >O'zbekcha</a
+                    >
+                    <a
+                      class="dropdown-item1"
+                      href="../../Russia/menu/index.html"
+                      >Русский</a
+                    >
+                    <a
+                      class="dropdown-item1"
+                      href="../../English/menu/index.html"
+                      >English</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-item navbar-item3">
+            <ul>
+              <li style="padding-top: 7px">
+                <a href="#" class="after" id="after" onclick="dropdownStart1()">
+                  O'zb
+                </a>
+                <div class="dropdown-menu1" id="dropdown-menu1">
+                  <a class="dropdown-item active" href="./index.html"
+                    >O'zbekcha</a
+                  >
+                  <a class="dropdown-item" href="../../Russia/menu/index.html"
+                    >Русский</a
+                  >
+                  <a class="dropdown-item" href="../../English/menu/index.html"
+                    >English</a
+                  >
+                </div>
+              </li>
+              <li class="li li1">
+                <a href="../search/search.html">
+                  <img src="./img/ic_search.svg" alt="" />
+                </a>
+              </li>
+              <li class="li">
+                <a href="#">
+                  <img onclick="chaqir()" src="./img/ic_profile.png" alt="" />
+                </a>
+              </li>
+              <li class="li">
+                <a href="#">
+                  <img onclick="backetOpen()" src="./img/ic_cart.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+
+      <!-- main section start -->
+      <div class="clear"></div>
+      <div class="button-fixed">
+        <a href="#"> Xabar yozish </a>
+      </div>
+      <div class="main-section">
+        <div class="main-section_items" id="main-section_items">
+          <div class="main-section_navbar">
+            <h1 class="h1">Menyu</h1>
+            <div class="main-section_nav">
+              <ul>
+                <li><a href="#">Shirinliklar bu yerda</a></li>
+                <li style="background-color: #d4d4d4">
+                  <a href="#">Tortlar</a>
+                </li>
+                <li><a href="#">Katta Tortlar</a></li>
+                <li><a href="#">Pirog</a></li>
+                <li><a href="#">Katta pirog</a></li>
+                <li><a href="#">Dumaloq pirog</a></li>
+                <li><a href="#">Kekslar</a></li>
+                <li><a href="#">Eklerlarы</a></li>
+                <li><a href="#">Chak-chak</a></li>
+                <li><a href="#">Таrtaletkalar</a></li>
+                <li><a href="#">Pirojni</a></li>
+                <li><a href="#">Pechenye</a></li>
+                <li><a href="#">Makaron</a></li>
+                <li><a href="#">Go'shtsiz va shakarsiz </a></li>
+                <li><a href="#">Yarim tayyor</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-section_product">
+            <div class="main-section_title">
+              <h1 class="h1">Тоrtlar</h1>
+              <div class="main-section_productSearch">
+                <input
+                  name="search"
+                  type="search"
+                  class="searchInput"
+                  placeholder="Nima qidiryabsiz"
+                />
+                <button name="search" type="button" class="btnSearch">
+                  Qidiruv
+                </button>
+              </div>
+            </div>
+            <hr class="hr" />
+            <div class="main-section_productItems">
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Zebra dumaloq torti</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Qo'shish
+
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Praga new</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Iriska tort</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Zebra dumaloq torti</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Qo'shish
+
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Praga new</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Iriska tort</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Zebra dumaloq torti</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Qo'shish
+
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Praga new</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Iriska tort</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Zebra dumaloq torti</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Qo'shish
+
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Praga new</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Iriska tort</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Zebra dumaloq torti</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Qo'shish
+
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Praga new</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Iriska tort</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Zebra dumaloq torti</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Qo'shish
+
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Praga new</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Iriska tort</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Zebra dumaloq torti</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Qo'shish
+
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Praga new</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Iriska tort</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Zebra dumaloq torti</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Qo'shish
+
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Praga new</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Iriska tort</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort1.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Zebra dumaloq torti</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button onclick="order()" id="btn" type="button">
+                      Qo'shish
+
+                    </button>
+                    <p id="order">
+                      <span id="cancel-order"> - </span>1<span id="to-order">
+                        +
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort2.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Praga new</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-section_productItem">
+                <img src="./img/tort3.jpg" alt="" />
+                <div class="card-title">
+                  <h4 style="padding-bottom: 4px">
+                    <a style="font-size: 14px; color: black" href="#"
+                      >Iriska tort</a
+                    >
+                  </h4>
+                  <p>
+                    Mazali, sirop bilan toʻyintirilgan vanil va shokoladli
+                    kekssimon biskvitli tort. Yogurtli sufle, nektarin
+                    boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort
+                    10 - 12 kishi
+                  </p>
+                  <div class="dollar">
+                    <span style="color: #000">128 000</span>
+                    <button type="button">Qo'shish
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- main section end -->
+
+      <!-- footer start -->
+      <div class="footer">
+        <div class="footer-icon">
+          <img src="../images/girl.png" alt="" />
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li><a href="../about/about.html">Biz haqimizda/a></li>
+            <li><a href="../menu/index.html">Меnyu</a></li>
+            <li><a href="../Новости/Hoвости.html">Yangiliklar</a></li>
+            <li><a href="../restoran/restoran.html">Restoranlar</a></li>
+            <li><a href="../ПубличнаяOферта/main.html">Foydalanish shartlari</a></li>
+            <li><a href="../karera/karera.html">Кarera</a></li>
+            <li><a href="../contact/contact.html">Aloqa</a></li>
+          </ul>
+        </div>
+        <div class="footer-tginsfac">
+          <div class="fac">
+            <a href="https://www.facebook.com/Safia.uz" target="_blank">
+              <img src="../images/ic_facebook.png" alt="" />
+            </a>
+          </div>
+          <div class="ins">
+            <a href="https://www.instagram.com/safia_uz/" target="_blank">
+              <img src="../images/ic_instagram.png" alt="" />
+            </a>
+          </div>
+          <div class="tg">
+            <a href="https://t.me/safia_uzbot" target="_blank">
+              <img src="../images/ic_telegram.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <p>2021 Safia Cafe & Bakery. Barcha haq-huquqlar himoyalangan.</p>
+      </div>
+      <!-- footer end -->
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

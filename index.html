@@ -4,24 +4,810 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>safiabakery.uz</title>
-    <link rel="icon" href="./Russia/menu/img/girl.png" />
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-
-      a {
-        text-transform: uppercase;
-        text-decoration: none;
-      }
-    </style>
+    <title>Qandolat uyi | Safia Cafe & Bakery</title>
+    <link rel="icon" href="./O'zbekcha/menu/img/girl.png" />
+    <link rel="stylesheet" href="./O'zbekcha/style/style.css" />
   </head>
-  <body>
-    <h1><a href="./Russia/index.html">Russia</a></h1>
-    <h1><a href="./English/index.html">English</a></h1>
+  <body id="body1">
+    <div class="container">
+      <div class="container-modal" id="modal" style="display: none">
+        <div class="modal">
+          <div class="modal-exit">
+            <img
+              onclick="yop()"
+              style="cursor: pointer; width: 25px; height: 25px"
+              src="https://img.icons8.com/ios/50/000000/close-window.png"
+            />
+          </div>
+          <div class="modal-img-logo">
+            <img src="./Russia/menu/img/logo.svg" alt="" />
+          </div>
+          <div class="modal-input">
+            <input type="text" placeholder="Iltimos raqamingizni kiriting:" />
+          </div>
+          <div class="modal-button">
+            <button type="submit">Davom ettirish</button>
+          </div>
+        </div>
+      </div>
+      <div class="backet" id="backet" style="display: none">
+        <div class="inside-backet">
+          <div class="backet-title">
+            <p>Savatcha</p>
+            <img
+              onclick="yop()"
+              style="cursor: pointer; width: 25px; height: 25px"
+              src="https://img.icons8.com/ios/50/000000/close-window.png"
+            />
+          </div>
+          <div class="product">
+            <p>Sizning savatchangiz bo'sh <br />Iltimos mahsulotni tanlang</p>
+          </div>
+        </div>
+      </div>
+      <!-- navbar start -->
+      <div class="navbar">
+        <div class="navbar-items">
+          <div class="navbar-item navbar-item1">
+            <a href="#" class="navbar-brend">
+              <img src="./O'zbekcha/menu/img/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="navbar-item navbar-item2">
+            <ul>
+              <li><a href="#">Тoshkent</a></li>
+              <li>
+                <a
+                  href="./O'zbekcha/about/about.html"
+                  style="vertical-align: middle"
+                  >Biz haqimizda</a
+                >
+              </li>
+              <li><a href="./O'zbekcha/menu/index.html">Меnyu</a></li>
+              <li>
+                <a href="./O'zbekcha/Новости/Hoвости.html">Yangiliklar</a>
+              </li>
+              <li>
+                <a href="./O'zbekcha/restoran/restoran.html">Restoranlar</a>
+              </li>
+              <li><a href="./O'zbekcha/contact/contact.html">Aloqa</a></li>
+              <li>
+                <a href="#">
+                  <span
+                    style="display: block; font-size: 20px; line-height: 21px"
+                    >+998 78 113 40 40</span
+                  >
+                  <span
+                    style="
+                      display: block;
+                      font-size: 14px;
+                      text-transform: none;
+                      text-align: center;
+                    "
+                  >
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <div class="navbar-item2_menu">
+              <div class="navbar-item2_menuLogo">
+                <img
+                  onclick="menu()"
+                  src="./O'zbekcha/menu/img/menu.svg"
+                  style="cursor: pointer"
+                  alt=""
+                />
+                <a href="#" class="navbar-brend">
+                  <img
+                    style="height: 60px"
+                    src="./O'zbekcha/menu/img/logo.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <ul id="ul-menu">
+                <li><a href="#">Тoshkent</a></li>
+                <li>
+                  <a
+                    href="./O'zbekcha/about/about.html"
+                    style="vertical-align: middle"
+                    >Biz haqimizda/a
+                  >
+                </li>
+                <li><a href="./O'zbekcha/menu/index.html">Меnyu</a></li>
+                <li><a href="./O'zbekcha/Новости/Hoвости.html">Yangiliklar</a></li>
+                <li>
+                  <a href="./O'zbekcha/restoran/restoran.html">Restoranlar</a>
+                </li>
+                <li><a href="./O'zbekcha/contact/contact.html">Aloqa</a></li>
+                <li>
+                  <a
+                    class="after"
+                    style="
+                      color: rgba(0, 0, 0, 0.9);
+                      font-weight: 500;
+                      font-size: 17px;
+                      font-family: sans-serif;
+                    "
+                    href="#"
+                    class="after"
+                    id="after"
+                    onclick="dropdownStart()"
+                  >
+                    O'zb
+                  </a>
+                  <div class="dropdown-menu1" id="dropdown-menu">
+                    <a class="dropdown-item1 active" href="./index.html"
+                      >O'zbekcha</a
+                    >
+                    <a class="dropdown-item1" href="./Russia/index.html"
+                      >Русский</a
+                    >
+                    <a class="dropdown-item1" href="./English/index.html"
+                      >English</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-item navbar-item3">
+            <ul>
+              <li style="padding-top: 7px">
+                <a href="#" class="after" id="after" onclick="dropdownStart1()">
+                  O'zb
+                </a>
+                <div
+                  class="dropdown-menu1 joyi"
+                  style="left: 0; top: 50px"
+                  id="dropdown-menu1"
+                >
+                  <a class="dropdown-item active" href="./index.html"
+                    >O'zbekcha</a
+                  >
+                  <a class="dropdown-item" href="./Russia/index.html"
+                    >Русский</a
+                  >
+                  <a class="dropdown-item" href="./English/index.html"
+                    >English</a
+                  >
+                </div>
+              </li>
+              <li class="li li1">
+                <a href="./O'zbekcha/search/search.html">
+                  <img src="./O'zbekcha/menu/img/ic_search.svg" alt="" />
+                </a>
+              </li>
+              <li class="li">
+                <a href="#">
+                  <img
+                    onclick="chaqir()"
+                    src="./O'zbekcha/menu/img/ic_profile.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="li">
+                <a href="#">
+                  <img
+                    onclick="backetOpen()"
+                    src="./O'zbekcha/menu/img/ic_cart.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+      <div class="button-fixed">
+        <a href="#"> Xabar yozish  </a>
+      </div>
+      <!-- kiev tort star -->
+      <div class="kiev-tort">
+        <a href="./O'zbekcha/menu/index.html">
+          <img
+            style="width: 100%"
+            src="./O'zbekcha/menu/img/kievtort.jpg"
+            alt=""
+        /></a>
+      </div>
+      <!-- kiev tort end -->
+
+      <!-- menu-list -->
+      <div class="menu-list">
+        <div class="menu-list-title">
+          <!-- <h1>Кондитерский дом Safia в Ташкенте</h1> -->
+          <h1>Bizning menyu</h1>
+        </div>
+        <div class="menu-list-items">
+          <div class="menu-list-item"><a href="#">Shirinliklar </a></div>
+          <div class="menu-list-item"><a href="#">Yarim tayyor ovqatlar</a></div>
+          <div class="menu-list-item"><a href="#">Donador qahva</a></div>
+        </div>
+        <div class="menu-list-nav">
+          <ul>
+            <li class="li1"><a href="#">Tortlar</a></li>
+            <li class="li2"><a class="a2" href="#">Katta tortlar</a></li>
+            <li class="li3"><a href="#">Pirog</a></li>
+            <li class="li4"><a href="#">Katta pirog</a></li>
+            <li class="li5"><a href="#">Oshirma hamiz pishiriqlar</a></li>
+            <li class="li6"><a href="#">Kekslar</a></li>
+            <li class="li7"><a href="#">Eklerlar</a></li>
+            <li class="li8"><a href="#">Chak-chak</a></li>
+            <li class="li9"><a href="#">Tartaletkalar</a></li>
+            <li class="li10"><a href="#">Pirojniy</a></li>
+            <li class="li11"><a href="#">Pechenye</a></li>
+            <li class="li12"><a href="#">Мakaron</a></li>
+            <li class="li13"><a href="#">Go'shtsiz va shakarsiz </a></li>
+            <li class="li14"><a href="#">Tug'ilgan kun uchun bezak </a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- menu-list end -->
+
+      <!--cards start-->
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort3.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort1.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./O'zbekcha/menu/img/tort2.jpg" alt="qwerty" />
+          </div>
+          <div class="card-title">
+            <h5>Zebra dumaloq torti</h5>
+            <p>
+              Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari va mavsumiy rezavor mevalar qo’shilgan. Tort 10 - 12 kishi uchun mo'ljallangan.
+            </p>
+            <div class="card-end">
+              <h5>128 000</h5>
+              <a href="#">Qo'shish</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cards end -->
+
+      <!-- advantage start -->
+      <div class="advantage">
+        <div class="advantage-title">
+          <h1>Bizning afzalliklarimiz</h1>
+          <h3>Sizning kulguyingizga 1000 ta sabab!</h3>
+          <p>
+            Muvaffaqiyatli oilaviy biznesning ajoyib namunasi. Bu yerda qandolat mahsulotlarining mukammalligi nafaqat ajoyib, balki takrorlanmas ta'mi bilan ajralib turadi.Har kuni o'z sohasining mutaxassislar sizning bayramingiz uchun pirojniy va shirinliklar yaratish ustida ishlashadi!
+
+          </p>
+          <p>
+           Biz sizni chinakam zavqni his etishingizni tilab qolamiz. Nafaqat bizning shirinlik larimiz ta'midan, balki yuqori darajadagi oshpazlar tomonidan tayyorlangan eksklyuziv taomlardan va albatta, eng yaxshi barmenlar tomonidan yaratilgan noyob ichimliklardan bahramand bo'ling!
+
+          </p>
+        </div>
+      </div>
+      <!-- advantage end -->
+
+      <!-- footer img start -->
+      <div class="footer-img">
+        <div class="img1">
+          <img src="./O'zbekcha/images/a-1.jpg" alt="" />
+          <p>Eng yaxshi <br />qahva</p>
+        </div>
+        <div class="img2">
+          <img src="./O'zbekcha/images/a-2.jpg" alt="" />
+          <p>Mahsulotlar </p>
+        </div>
+        <div class="img3">
+          <img src="./O'zbekcha/images/a-3.jpg" alt="" />
+          <p> desertlar <br>
+            ta'mi</p>
+        </div>
+        <div class="img4">
+          <img src="./O'zbekcha/images/a-4.jpg" alt="" />
+          <p>Shaharning istalgan joyiga </p>
+        </div>
+      </div>
+      <!-- footer img end -->
+
+      <!-- o nac start -->
+      <div class="nac">
+        <div class="nac-item">
+          <div class="nac-item-title">
+            <h1>Biz haqimizda</h1>
+            <p class="p1">
+              Safia qandolat mahsulotlari tarmogʻi – bu oilaviy korxona, uning tarixi havaskor qandolatchi Muxayo Ayupovadan boshlanadi. Uning mehnatsevarligi va uy pishirigʻiga boʻlgan muhabbati uni 2001-yilda oilaviy oshxona doirasidan tashqariga chiqib, avval qarindoshlari, doʻstlari va qoʻshnilariga sotish uchun pishirishni boshlashga undadi. Turmush oʻrtogʻi Akmal Ayupov Muxayoning ijodiy faoliyatini qoʻllab-quvvatlaydi va tayyor mahsulotlarni yetkazib berishni tashkil qiladi.
+            </p>
+            <br />
+            <p class="p2">
+              2007-yilda Muxayo Ayupovaning qizi Madina Akmalovna birinchi uy pishiriqlari doʻkonni ochdi. U muvaffaqiyatli oilaviy tajribadan ilhomlanib, oʻz gʻoyalarini, retseptlarini, yangi taʼmlarini yaratib, amalda tatbiq etadi. Uning pazandalik tajribasi va qandolatchilik mahorati tufayli qandolat mahsulotlari barchalar sevadigan va biladigan narsalarga aylandi: mazali, goʻzal va yuqori sifatli.
+
+            </p>
+            <a href="#">Batafsil</a>
+          </div>
+          <div class="nac-item-img">
+            <img
+              style="width: 245px; height: 360px"
+              src="./O'zbekcha/images/oshpazTogo.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- o nac end -->
+
+      <!--contact start -->
+      <div class="contact">
+        <div class="contact-title">
+          <h1>Biz bilan bog’laning</h1>
+        </div>
+        <div class="contact-items">
+          <div class="img-left">
+            <img
+              style="width: 250px; height: 176px"
+              src="./O'zbekcha/images/envelop-icon.png"
+              alt=""
+            />
+          </div>
+          <div class="text-right">
+            <h3>
+              Biz bilan bog’lanishdan tortingmang. Siz bilan tez orada aloqaga chiqamiz.
+            </h3>
+            <div class="input-rigth">
+              <form>
+                <input class="input" type="text" placeholder="ФИО" required />
+                <div class="help-input">Ism va familiyangiz</div>
+                <input
+                  class="input"
+                  type="tel"
+                  required
+                  placeholder="Telefon numeringiz"
+                />
+                <div class="help-input">
+                 Telefon numeringiz               
+                 </div>
+                <input
+                  class="input"
+                  type="text"
+                  required
+                  placeholder="Xabar yozish"
+                />
+                <div class="help-input">Xabar yozish</div>
+                <button class="btn"><a href="#">Jo'natish</a></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--contact end -->
+
+      <!-- footer start -->
+      <div class="footer">
+        <div class="footer-icon">
+          <img src="./O'zbekcha/images/girl.png" alt="" />
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li><a href="./O'zbekcha/about/about.html">Biz haqimizda</a></li>
+            <li><a href="./O'zbekcha/menu/index.html">Меnyu</a></li>
+            <li><a href="./O'zbekcha/Новости/Hoвости.html">Yangiliklar</a></li>
+            <li><a href="./O'zbekcha/restoran/restoran.html">Restoranlar</a></li>
+            <li>
+              <a href="./O'zbekcha/ПубличнаяOферта/main.html"
+                >Foydalanish shartlari</a
+              >
+            </li>
+            <li><a href="./O'zbekcha/karera/karera.html">Каrera</a></li>
+            <li><a href="./O'zbekcha/contact/contact.html">Aloqa</a></li>
+          </ul>
+        </div>
+        <div class="footer-tginsfac">
+          <div class="fac">
+            <a href="https://www.facebook.com/Safia.uz" target="_blank">
+              <img src="./O'zbekcha/images/ic_facebook.png" alt="" />
+            </a>
+          </div>
+          <div class="ins">
+            <a href="https://www.instagram.com/safia_uz/" target="_blank">
+              <img src="./O'zbekcha/images/ic_instagram.png" alt="" />
+            </a>
+          </div>
+          <div class="tg">
+            <a href="https://t.me/safia_uzbot" target="_blank">
+              <img src="./O'zbekcha/images/ic_telegram.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <p>2021 Safia Cafe & Bakery. Barcha haq-huquqlar himoyalangan</p>
+      </div>
+      <!-- footer end -->
+    </div>
+    <script src="./O'zbekcha/Js/app.js"></script>
   </body>
 </html>
